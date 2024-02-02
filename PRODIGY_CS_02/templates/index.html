@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption Tool</title>
+</head>
+<body>
+    <h1>Image Encryption Tool</h1>
+
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Upload Image</button>
+    </form>
+
+    {% if image_path %}
+        <h2>Original Image</h2>
+        <img src="{{ url_for('static', filename=image_path) }}" alt="Original Image" style="max-width: 400px;">
+
+        <h2>Encrypted Image</h2>
+        <form action="{{ url_for('encrypt', key=50) }}" method="get">
+            <button type="submit">Encrypt Image</button>
+        </form>
+        {% if encrypted_path %}
+            <img src="{{ url_for('static', filename=encrypted_path) }}" alt="Encrypted Image" style="max-width: 400px;">
+        {% endif %}
+
+        <h2>Decrypted Image</h2>
+        <form action="{{ url_for('decrypt', key=50) }}" method="get">
+            <button type="submit">Decrypt Image</button>
+        </form>
+        {% if decrypted_path %}
+            <img src="{{ url_for('static', filename=decrypted_path) }}" alt="Decrypted Image" style="max-width: 400px;">
+        {% endif %}
+    {% endif %}
+</body>
+</html>
