@@ -1,6 +1,6 @@
 # Internship Tasks Repository
 
-Welcome to my internship tasks repository! Here you'll find the projects I worked on during my internship. Each project serves as a demonstration of my skills and growth throughout the internship period.
+Welcome to my internship tasks repository! Here you'll find the projects I worked on during my internship with Prodigy Infotech. Each project serves as a demonstration of my skills and growth throughout the internship period.
 
 ## Projects
 
