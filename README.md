@@ -20,10 +20,6 @@ The Password Complexity Checker is a utility program designed to assess the stre
 
 The Keylogger Malware project is a simulation of a malicious software that secretly records keystrokes on a computer. Although developed for educational purposes only, this project demonstrates my understanding of cybersecurity threats and the techniques used by attackers.
 
-## Usage
-
-Each project is contained within its respective directory in this repository. You can explore the code, documentation, and any additional resources provided for each project.
-
 ## Contributions
 
 I welcome any feedback, suggestions, or contributions to these projects. Feel free to open an issue or submit a pull request if you have any improvements or ideas to share.
